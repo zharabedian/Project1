@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/ekaterinalagnado/Desktop/rutgers/HW/Project1/face.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <link rel="stylesheet" href="./face_files/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero-image {
+      background-image: url("assets/images/background1.jpg");
+      background-color: lightskyblue;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 3%;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      float: center;
+      color: whitesmoke;
+    }
+
+    #output {
+color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/Project1/face.html#">Facetube</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="file:///Project1/index">Home</a></li>
+            <li><a href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/Project1/face.html#">About</a></li>
+            <li><a href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/Project1/face.html#">Contact</a></li>
+          </ul>
+          
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/Project1/">Default <span class="sr-only">(current)</span></a></li>
+            <li><a href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/navbar-static-top/">Static top</a></li>
+            <li><a href="file:///Users/ekaterinalagnado/Desktop/rutgers/HW/navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+
+
+
+<div class="container">
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Welcome to Facetube</h1>
+        <h3>Upload your photo and find out your video of the day!</h3>
+
+
+
+        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+        </p>
+        <button type="button" class="btn btn-success">
+          <label for="file" style="cursor: pointer;">Upload Image</label>
+          
+        </button>
+
+        <p><img id="output" width="950" height="600"></p>
+        <div>
+
+
+          <script>
+            var loadFile = function (event) {
+              var image = document.getElementById('output');
+              image.src = URL.createObjectURL(event.target.files[0]);
+              console.log($('#output').attr('src'));
+
+              var x = $('#output').attr('src');
+              $('body').append('<img src="' + x + '"/>')
+            };
+          </script>
+
+
+
+
+        </div>
+      </div>
+      </div>
+
+
+</div></div></body></html>

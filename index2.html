@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+    <div class="container">
+  <!-- <div class="jumbotron"> -->
+    <nav class="navbar navbar-default">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Facetube</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index1.html">Celebrities</a></li>
+            <li><a href="index2.html">Custom API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul> -->
+        </div>
+      </nav>
+      <div class="image-container">
+          <div class="row">
+              <div class="col-sm-12">
+                <br>
+                <!-- First card is for handling the search parameters -->
+                <div class="imagecard">
+                  <div class="card-header">
+                    <strong>
+                      <i class="fa fa-list-alt"></i> Image URL</strong>
+                  </div>
+                  <div class="card-body">
+        
+                    <!-- Here we create an HTML Form for handling the inputs-->
+                    <form role="form">
+        
+                      <!-- Here we create the text box for capturing the search term-->
+                      <div class="form-group">
+                        <label for="search">Enter your Image URL here:</label>
+                        <input type="text" class="form-control" id="search-term">
+                      </div>
+    
+                      <!-- Here we have our final submit button -->
+                      <button type="submit" class="btn btn-default" id="run-search">
+                        <i class="fa fa-search"></i> Search</button>
+                      <button class="btn btn-default" id="clear-all">
+                        <i class="fa fa-trash"></i> Clear </button>
+        
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+<div class="col-sm-6" id="imagecol">
+<img src="#" id="image">
+</div>
+<div class="col-sm-6" id="imageresult">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Attribute</th>
+            <th scope="col">Value</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Age:</td>
+            <td id="agevalue"></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Gender:</td>
+            <td id="gendervalue"></td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Emotion:</td>
+            <td id="emotionvalue"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
+
+  </div>
+            </div>
+          
+          <div class="video-container">
+
+      <button class="videobutton" >
+          Click to watch your video of the day!
+         </button>
+        <!--/.nav-collapse -->
+      <!-- </div> -->
+      <!--/.container-fluid -->
+   
+      <div id="mainvideo">
+          <iframe  id="video" src=""  autoplay="1" frameborder="0" allowfullscreen></iframe>
+          <h2 id="quote">You look sad !Here is some motivation</h2>
+  </div>
+  
+          <div id="wrapper">
+    
+                  <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
+                    <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
+                  </span>
+                  
+                  <div class="title text-center h1">You might also be interested in </div>
+                 
+                  <div class="module-section clearfix">
+                    <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
+                   <ul id="content">
+                    
+                    <li class="card effect1">
+                      <div class="inside-top">
+                        <img src="https://img.youtube.com/vi/eROWK2LzVUU/0.jpg" class="morevideo">
+                        <img src="assets/images/redplay.png" class="play">
+                      </div>
+                    </li>
+                     <li class="card">
+                      <div class="inside-top">
+                        <img src="https://img.youtube.com/vi/zfLNBygs-IQ/0.jpg" class="morevideo">
+                        <img src="assets/images/redplay.png" class="play">
+                      </div>
+                    </li>
+                     <li class="card">
+                      <div class="inside-top">
+                        <img src="https://img.youtube.com/vi/E1Jr_IXl60I/0.jpg" class="morevideo">
+                        <img src="assets/images/redplay.png" class="play">
+                      </div>
+                    </li>
+                     <li class="card">
+                      <div class="inside-top">
+                        <img src="https://img.youtube.com/vi/hitt1hzlJzU/0.jpg"  class="morevideo" >
+                        <img src="assets/images/redplay.png" class="play">
+                      </div>
+                    </li>
+                     <li class="card">
+                      <div class="inside-top">
+                        <img src="https://img.youtube.com/vi/XH0vJiTAUK4/0.jpg"  class="morevideo">
+                        <img src="assets/images/redplay.png" class="play">
+  
+                      </div>
+                    </li>
+                    
+    
+                       
+                    
+                    
+                   </ul>
+                    
+                   
+                    
+                  </div><!--end of module-section-->
+                  
+                <span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
+                    <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
+                  </span>
+                <!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+                  
+                  
+                  
+                </div>
+              </div> 
+              </div>
+              <script src="customapi.js">
+
+
+              </script>
+</body>
+
+</html>
