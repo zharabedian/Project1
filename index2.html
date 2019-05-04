@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
   
@@ -76,7 +77,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row imagerow">
 <div class="col-sm-6" id="imagecol">
 <img src="#" id="image">
 </div>
@@ -110,6 +111,12 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="row chartrow">
+        <div class="col-md-12">
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
   </div>
   
 
@@ -118,7 +125,7 @@
           
           <div class="video-container">
 
-      <button class="videobutton" >
+      <button class="videobutton"  type="button" >
           Click to watch your video of the day!
          </button>
         <!--/.nav-collapse -->
@@ -127,10 +134,10 @@
    
       <div id="mainvideo">
           <iframe  id="video" src=""  autoplay="1" frameborder="0" allowfullscreen></iframe>
-          <h2 id="quote"></h2>
+          <!-- <h2 id="quote">You look sad !Here is some motivation</h2> -->
   </div>
   
-          <div id="wrapper">
+          <div id="wrapper" class="wrapclass">
     
                   <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
                     <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
@@ -138,38 +145,38 @@
                   
                   <div class="title text-center h1">You might also be interested in </div>
                  
-                  <div class="module-section clearfix">
+                  <div class="module-section">
                     <!-- <button class="btn arrow-guides fa-chevron-left"></button> -->
                    <ul id="content">
                     
                     <li class="card effect1">
                       <div class="inside-top">
-                        <img src="https://img.youtube.com/vi/eROWK2LzVUU/0.jpg" class="morevideo">
-                        <img src="assets/images/redplay.png" class="play">
+                        <img src="#" class="morevideo morevideo1">
+                        <img src="#" class="play">
                       </div>
                     </li>
                      <li class="card">
                       <div class="inside-top">
-                        <img src="https://img.youtube.com/vi/zfLNBygs-IQ/0.jpg" class="morevideo">
-                        <img src="assets/images/redplay.png" class="play">
+                        <img src="#" class="morevideo morevideo2">
+                        <img src="#" class="play">
                       </div>
                     </li>
                      <li class="card">
                       <div class="inside-top">
-                        <img src="https://img.youtube.com/vi/E1Jr_IXl60I/0.jpg" class="morevideo">
-                        <img src="assets/images/redplay.png" class="play">
+                        <img src="#" class="morevideo morevideo3">
+                        <img src="#" class="play">
                       </div>
                     </li>
                      <li class="card">
                       <div class="inside-top">
-                        <img src="https://img.youtube.com/vi/hitt1hzlJzU/0.jpg"  class="morevideo" >
-                        <img src="assets/images/redplay.png" class="play">
+                        <img src="#"  class="morevideo morevideo4" >
+                        <img src="#" class="play">
                       </div>
                     </li>
                      <li class="card">
                       <div class="inside-top">
-                        <img src="https://img.youtube.com/vi/XH0vJiTAUK4/0.jpg"  class="morevideo">
-                        <img src="assets/images/redplay.png" class="play">
+                        <img src="#"  class="morevideo morevideo5">
+                        <img src="#" class="play">
   
                       </div>
                     </li>

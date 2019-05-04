@@ -1,8 +1,8 @@
-
 .container {
 	background-image: url("assets/images/background1.jpg");
   background-size: cover;
   Background-repeat: no-repeat;
+
 	
 }
 p.navbar-brand{
@@ -75,6 +75,11 @@ btn.btn-primary{
 max-width:100%;
 padding:20px 75px 50px 45px;
 position:relative;
+}
+#mainvideobtn{
+  float:left;
+  width:50%;
+ margin: 20px 100px 20px 100px;
 }
 
 button:focus {outline:0 !important;}
@@ -311,4 +316,14 @@ zoom: 1;
 .inside-top:active {
 border:solid 2px red;
 
+}
+
+.videobutton{
+  margin: 20px 30% 20PX 30%;
+  width:50%;
+height:100px;
+}
+     
+.chartrow{
+  margin-top:150px; 
 }
